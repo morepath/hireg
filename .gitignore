@@ -1,0 +1,13 @@
+bin
+parts
+.installed.cfg
+.mr.developer.cfg
+develop-eggs
+.coverage
+htmlcov
+doc/build
+build
+Profile.prof
+*.c
+*.so
+src

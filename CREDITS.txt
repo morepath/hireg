@@ -1,0 +1,4 @@
+CREDITS
+-------
+
+Hireg was written by Martijn Faassen.
