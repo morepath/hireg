@@ -32,7 +32,6 @@ setup(name='hireg',
         ],
       install_requires=[
         'setuptools',
-        'reg',
         ],
       ext_modules=cythonize('hireg/mapply.pyx'),
       tests_require=tests_require,
