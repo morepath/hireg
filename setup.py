@@ -31,7 +31,8 @@ setup(name='hireg',
         'Development Status :: 4 - Beta'
         ],
       install_requires=[
-        'setuptools'
+        'setuptools',
+        'reg',
         ],
       ext_modules=cythonize('hireg/mapply.pyx'),
       tests_require=tests_require,

@@ -1,4 +1,5 @@
 import inspect
+from .mapply_extra import fake_empty_init, WRAPPER_DESCRIPTOR
 
 
 def mapply(func, *args, **kw):
@@ -16,6 +17,7 @@ def mapply(func, *args, **kw):
     function/method that we've borrowed.
     """
     return cymapply(func, args, kw)
+
 
 cdef object cymapply(object func, tuple args, dict kw):
     cdef dict new_kw
@@ -121,15 +123,6 @@ def get_callable_info(callable):
         return None, None, False
 
 
-def fake_empty_init():
-    pass
-
-
-class Dummy(object):
-    pass
-
-
-WRAPPER_DESCRIPTOR = Dummy.__init__
 
 
 def get_class_init(class_):
